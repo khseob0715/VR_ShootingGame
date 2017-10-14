@@ -22,6 +22,8 @@ public class LaserGun : MonoBehaviour {
 
 	public static bool start = false; 
 
+	private AudioSource sound;
+
 	private SteamVR_Controller.Device Controller
 	{
 		// 컨트롤러에 쉽게 접근하기 위해서 
@@ -50,6 +52,8 @@ public class LaserGun : MonoBehaviour {
 	void Start () {
 		laser.SetActive (false);
 		ScoreText.text = "Unity Game";
+
+		sound = GetComponent<AudioSource> ();
 	}
 		
 	// Update is called once per frame
@@ -58,10 +62,9 @@ public class LaserGun : MonoBehaviour {
 	    ray.direction = this.transform.forward; // 기존 앞으로 나가는 ray 
 		//ray.direction = new Vector3(1.0f, -1.0f, 0.0f);
 
-
-
 		if (Controller.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {  // 트리거를 눌렀을 때
 			GameObject bul = Instantiate (bullet, this.transform.position + new Vector3(0f,0.15f,0f), this.transform.rotation);
+			sound.Play ();
 
 			if (Physics.Raycast (ray, out hit, 100) && hit.collider.gameObject != GameObject.Find("Plane")) 
 			{
