@@ -55,7 +55,9 @@ public class LaserGun : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		ray.origin = this.transform.position;
-		ray.direction = this.transform.forward;
+	    ray.direction = this.transform.forward; // 기존 앞으로 나가는 ray 
+		//ray.direction = new Vector3(1.0f, -1.0f, 0.0f);
+
 
 
 		if (Controller.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {  // 트리거를 눌렀을 때
@@ -106,9 +108,9 @@ public class LaserGun : MonoBehaviour {
 		}
 
 	}
-	void onDrawGizmos()
+	void OnDrawGizmos()  // 대소문자 주의 할 것 
 	{
-		Gizmos.color = Color.red;
+		Gizmos.color = Color.yellow;
 		Gizmos.DrawLine (ray.origin, ray.origin + ray.direction * distance);
 
 		Gizmos.DrawWireSphere (ray.origin, 1.0f);

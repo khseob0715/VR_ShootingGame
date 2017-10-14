@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/BallsFromHeaven.unity
+- path: Assets/ShootingGame.unity
   isLoaded: 1
   isActive: 1
