@@ -21,11 +21,11 @@ public class BallsFromHeaven : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (LaserGun.start) {
+		if (LaserGun.bGameStart) {
 			DeltaTime += Time.deltaTime;
 			if (DeltaTime > IntervalTime)
 			{
-				Debug.Log ("DeltaTime : " + DeltaTime + "Cnt : " + iCntBall);
+				//Debug.Log ("DeltaTime : " + DeltaTime + "Cnt : " + iCntBall);
 				Vector3 Position = new Vector3 (Random.Range (-4.0f, 4.0f), startHeight, Random.Range (-4.0f, 4.0f));
 
 				GameObject Meteo = Instantiate (MeteoPrefab, Position, Quaternion.identity);
