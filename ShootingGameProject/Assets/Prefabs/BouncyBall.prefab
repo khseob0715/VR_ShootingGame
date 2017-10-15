@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 135873714935630502}
   - component: {fileID: 23096445328803840}
   - component: {fileID: 54394698149693926}
-  - component: {fileID: 114725041549109542}
   - component: {fileID: 114833341051559614}
   m_Layer: 9
   m_Name: BouncyBall
@@ -99,17 +98,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114725041549109542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1907525921719120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8e8c6938a9e0224e9c00dc2fe279cdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114833341051559614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,5 +119,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}

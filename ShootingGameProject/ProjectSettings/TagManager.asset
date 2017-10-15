@@ -4,11 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - GUN
-  - Line
-  - Menu
-  - Time_score
   - Result_Score
+  - Menu
+  - CanvasScoreText
+  - CanvasTimeText
   layers:
   - Default
   - TransparentFX
@@ -18,28 +17,28 @@ TagManager:
   - UI
   - 
   - 
-  - Cub
+  - CharactersSebLu
+  - CharactersGuards
+  - Eyes
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Mask
+  - Particles
+  - PlaneReflections
+  - Crowd
+  - AreaLights
+  - Crowd Object
+  - Crowd Ground
+  - Characters
+  - Interior
+  - Tunnel
+  - Exterior
+  - Terrain
+  - Dream
+  - SlateUI
+  - Sky
+  - ParticleForcesPuddleDetailTest
+  - ParticleForcesPuddle
   - 
   - 
   m_SortingLayers:

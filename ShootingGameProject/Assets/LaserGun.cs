@@ -15,15 +15,17 @@ public class LaserGun : MonoBehaviour {
 	private Ray ray;
 	private RaycastHit hit;	
 
-	public Text ScoreText;
-	public Text TimeText;
+	//private GameObject ScoreText;
+	//private GameObject TimeText;
 
-	private int DeltaTime = 60;
-	private float tempTime = 0.0f;
+	private TextMesh ScoreTextMesh;
+	private TextMesh TimeTextMesh;
 
 	public GameObject bullet;
 
 	public static int score;
+	public static int GameTime;
+	private float tempTime = 0.0f;
 
 	public static bool bGameStart = false; 
 	public static bool bGameExit = false;
@@ -72,24 +74,28 @@ public class LaserGun : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		laser.SetActive (false);
-		ScoreText.text = "Unity Game";
-		TimeText.text = " ";
+		ScoreTextMesh = GameObject.FindGameObjectWithTag ("CanvasScoreText").GetComponent<TextMesh> ();
+		ScoreTextMesh.text = "Shooting Game";
+		TimeTextMesh = GameObject.FindGameObjectWithTag("CanvasTimeText").GetComponent<TextMesh> ();
+		TimeTextMesh.text = " ";
+		GameTime = 60;
 	}
 		
 	// Update is called once per frame
 	void Update () {
 		ray.origin = this.transform.position;
 	    ray.direction = this.transform.forward; // 기존 앞으로 나가는 ray 
-		//ray.direction = new Vector3(1.0f, -1.0f, 0.0f);
-		TimeText.text = "Time : " + DeltaTime + " s";
+
+		TimeTextMesh.text = "Time : " + GameTime + " s";
+	
 		if (bGameStart) {
 			tempTime += Time.deltaTime;
 			if (tempTime > 1.0f) {
-				DeltaTime -= 1;
+				GameTime -= 1;
 				tempTime = 0.0f;
 			}
 		}
-		if (DeltaTime == 0) {
+		if (GameTime == 0) {
 			bGameStart = false;
 		}
 
@@ -122,7 +128,7 @@ public class LaserGun : MonoBehaviour {
 					Destroy (hit.collider.gameObject);
 
 				score += 1;
-				ScoreText.text = "Score: " + score;
+				ScoreTextMesh.text = "Score: " + score;
 
 				if (score == effect) { // 10점 단위 이펙트
 					Debug.Log("effect time");

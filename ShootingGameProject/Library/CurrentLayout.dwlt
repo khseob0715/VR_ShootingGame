@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 332, y: 271}
   m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
-  controlID: 117
+  controlID: 143
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 879, y: 492}
   m_MaxSize: {x: 16004, y: 14042}
   vertical: 1
-  controlID: 102
+  controlID: 142
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 879, y: 221}
   m_MaxSize: {x: 16004, y: 4021}
   vertical: 0
-  controlID: 103
+  controlID: 11
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -486,23 +486,23 @@ MonoBehaviour:
     height: 601
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 6e2f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: b066f1ffc461faffdcecfaff620cfeff366afeffc4f3feff3002ffffacecffffb0ecffffbcfbffffe6fbffffe8fbffff1afcffff0000000086330000ac330000be330000
+    m_ExpandedIDs: 9658f8ffe8fbffffeafbffff1afcffff000000003c33000044330000723300008e330000b2330000d8330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TimeText
-      m_OriginalName: TimeText
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13208
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3124907, y: -0.56034184, z: -5.6902866}
+    m_Target: {x: -0.99475163, y: 0.42928106, z: 3.2321079}
     speed: 2
-    m_Value: {x: -0.3124907, y: -0.56034184, z: -5.6902866}
+    m_Value: {x: -0.99475163, y: 0.42928106, z: 3.2321079}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -568,13 +568,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.002880992, y: 0.90430635, z: -0.42683533, w: 0.0062472825}
+    m_Target: {x: -0.10584897, y: 0.092028596, z: -0.0097796535, w: -0.99006623}
     speed: 2
-    m_Value: {x: 0.0028809838, y: 0.9043038, z: -0.4268341, w: 0.006247265}
+    m_Value: {x: -0.10584897, y: 0.092028596, z: -0.0097796535, w: -0.99006623}
   m_Size:
-    m_Target: 8.085723
+    m_Target: 4.55707
     speed: 2
-    m_Value: 8.085723
+    m_Value: 4.55707
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -623,30 +623,30 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Textures and Sprites/Decoration
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 95
   m_LastFolders:
-  - Assets/Textures and Sprites/Decoration
+  - Assets/Prefabs
   m_LastFoldersGridSize: 95
   m_LastProjectPath: C:\Users\YuGyungho\Desktop\ShootingGameProject\ShootingGameProject
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 213}
-    m_SelectedIDs: ea430000
-    m_LastClickedID: 17386
-    m_ExpandedIDs: 00000000a42700007c2a00000c2b00007a2b00002e2d00008c2d0000f02d0000aa430000ce430000f243000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 122d0000
+    m_LastClickedID: 11538
+    m_ExpandedIDs: 00000000b8270000522a0000ca2c0000ec2c00004c2d0000b02d0000ba3000001037000012370000204500003c450000444500004c45000056450000644500007645000078450000844500008845000094450000984500009a4500009c450000a8450000aa450000b4450000bc450000be450000c2450000c4450000d0450000d2450000e2450000f8450000024600000646000022460000244600002a4600002e46000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Background
-      m_OriginalName: Background
+      m_Name: Generic
+      m_OriginalName: Generic
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 17310
+      m_UserData: 17752
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -663,7 +663,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a42700007c2a00000c2b00007a2b0000c22b00002e2d00008c2d0000a82d0000f02d0000
+    m_ExpandedIDs: 00000000b8270000522a0000fa2a0000ca2c0000ec2c00004c2d0000b02d0000ba3000001037000012370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -691,7 +691,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: ce210000022c00002a2900004c63000014320000f0420000be42000000000000ae410000
+    m_ExpandedInstanceIDs: ce210000022c00002a2900004c63000014320000f0420000be42000000000000ae41000048300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -717,7 +717,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 95
-  m_DirectoriesAreaWidth: 203
+  m_DirectoriesAreaWidth: 287
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52

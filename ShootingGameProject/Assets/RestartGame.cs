@@ -19,7 +19,7 @@ public class RestartGame : MonoBehaviour {
 				LaserGun.bGameRestart = false;
 				LaserGun.bGameStart = false; 
 				LaserGun.score = 0;
-			
+				LaserGun.GameTime = 60;
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 
 			}
