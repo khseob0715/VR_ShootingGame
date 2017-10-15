@@ -53,10 +53,12 @@
   <ItemGroup>
      <Compile Include="Assets\BallDestroySound.cs" />
      <Compile Include="Assets\BallsFromHeaven.cs" />
+     <Compile Include="Assets\colliderSound.cs" />
      <Compile Include="Assets\ExitApplication.cs" />
      <Compile Include="Assets\GameEnd.cs" />
      <Compile Include="Assets\LaserGun.cs" />
      <Compile Include="Assets\LaserPoint.cs" />
+     <Compile Include="Assets\MeteoSwarm.cs" />
      <Compile Include="Assets\MosterAttack.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
@@ -64,6 +66,15 @@
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\RenderEffect.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\TransformExtension.cs" />
+     <Compile Include="Assets\PyroParticles\Demo\DemoScript.cs" />
+     <Compile Include="Assets\PyroParticles\Demo\DemoScriptEditor.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+     <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
      <Compile Include="Assets\RestartGame.cs" />
      <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
@@ -185,6 +196,7 @@
      <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
      <None Include="Assets\Adam Exterior Environment\Features\Shared\Internal-DeferredShading.shader" />
      <None Include="Assets\Adam Exterior Environment\Features\Shared\AdamStandardSpecular.shader" />
+     <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
      <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
      <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\effect_distortion_mask.shader" />
@@ -195,6 +207,7 @@
      <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
      <None Include="Assets\sky5X\README.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\PyroParticles\Readme.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Adam Exterior Environment\Features\PackedStandardSpecular\PackedStandardSpecular.shader" />
      <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />

@@ -26,6 +26,7 @@ public class LaserGun : MonoBehaviour {
 	public static int score;
 	public static int GameTime;
 	private float tempTime = 0.0f;
+	private bool timecheck = false;
 
 	public static bool bGameStart = false; 
 	public static bool bGameExit = false;
@@ -77,7 +78,7 @@ public class LaserGun : MonoBehaviour {
 		ScoreTextMesh = GameObject.FindGameObjectWithTag ("CanvasScoreText").GetComponent<TextMesh> ();
 		ScoreTextMesh.text = "Shooting Game";
 		TimeTextMesh = GameObject.FindGameObjectWithTag("CanvasTimeText").GetComponent<TextMesh> ();
-		TimeTextMesh.text = " ";
+		TimeTextMesh.text = "Time : " + GameTime + " s";
 		GameTime = 60;
 	}
 		
@@ -86,14 +87,23 @@ public class LaserGun : MonoBehaviour {
 		ray.origin = this.transform.position;
 	    ray.direction = this.transform.forward; // 기존 앞으로 나가는 ray 
 
-		TimeTextMesh.text = "Time : " + GameTime + " s";
-	
+
 		if (bGameStart) {
 			tempTime += Time.deltaTime;
 			if (tempTime > 1.0f) {
 				GameTime -= 1;
 				tempTime = 0.0f;
+				TimeTextMesh.text = "Time : " + GameTime + " s";
+				if (!timecheck) { // 시간 보정.
+					GameTime += 1; 
+					timecheck = true;
+				} else {
+					timecheck = false;
+				}
 			}
+
+
+
 		}
 		if (GameTime == 0) {
 			bGameStart = false;
@@ -127,9 +137,10 @@ public class LaserGun : MonoBehaviour {
 				if(!bGameExit)
 					Destroy (hit.collider.gameObject);
 
-				score += 1;
-				ScoreTextMesh.text = "Score: " + score;
-
+				if(hit.collider.gameObject != GameObject.Find("Box") && bGameStart){
+					score += 1;
+					ScoreTextMesh.text = "Score: " + score;
+				}
 				if (score == effect) { // 10점 단위 이펙트
 					Debug.Log("effect time");
 					GameObject part = Instantiate (particle_effect, hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);

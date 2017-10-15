@@ -8,6 +8,12 @@ TagManager:
   - Menu
   - CanvasScoreText
   - CanvasTimeText
+  - Time_score
+  - Line
+  - GUN
+  - Fire
+  - Plane
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -17,9 +23,9 @@ TagManager:
   - UI
   - 
   - 
-  - CharactersSebLu
-  - CharactersGuards
-  - Eyes
+  - 
+  - 
+  - 
   - 
   - 
   - Mask

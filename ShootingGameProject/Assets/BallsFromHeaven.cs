@@ -13,10 +13,16 @@ public class BallsFromHeaven : MonoBehaviour {
 	public GameObject MeteoPrefab;
 	public GameObject MeteoTailPrefab;
 	public GameObject MeteoPointParitclePrefab;
+	private AudioSource thrower_sound;
+	public AudioClip thrower_clip;
 
 	// Use this for initialization
 	void Start () {
-		
+		thrower_sound = gameObject.AddComponent <AudioSource>() as AudioSource;
+		thrower_sound.Stop ();
+		thrower_sound.clip = thrower_clip;
+		thrower_sound.loop = false;
+		thrower_sound.playOnAwake = false;
 	}
 	
 	// Update is called once per frame
@@ -25,6 +31,7 @@ public class BallsFromHeaven : MonoBehaviour {
 			DeltaTime += Time.deltaTime;
 			if (DeltaTime > IntervalTime)
 			{
+				thrower_sound.Play ();
 				//Debug.Log ("DeltaTime : " + DeltaTime + "Cnt : " + iCntBall);
 				Vector3 Position = new Vector3 (Random.Range (-4.0f, 4.0f), startHeight, Random.Range (-4.0f, 4.0f));
 
@@ -45,12 +52,11 @@ public class BallsFromHeaven : MonoBehaviour {
 				Destroy (MeteoTail, 1.5f);
 				// 유성 꼬리 파괴
 
-
 				DeltaTime = 0;
 				iCntBall++;
 			}
-
-
 		}
 	}
+
+
 }
