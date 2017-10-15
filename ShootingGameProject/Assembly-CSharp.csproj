@@ -60,6 +60,7 @@
      <Compile Include="Assets\LaserPoint.cs" />
      <Compile Include="Assets\MeteoSwarm.cs" />
      <Compile Include="Assets\MosterAttack.cs" />
+     <Compile Include="Assets\newS.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />

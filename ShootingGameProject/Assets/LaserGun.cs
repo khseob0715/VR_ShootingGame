@@ -78,8 +78,9 @@ public class LaserGun : MonoBehaviour {
 		ScoreTextMesh = GameObject.FindGameObjectWithTag ("CanvasScoreText").GetComponent<TextMesh> ();
 		ScoreTextMesh.text = "Shooting Game";
 		TimeTextMesh = GameObject.FindGameObjectWithTag("CanvasTimeText").GetComponent<TextMesh> ();
-		TimeTextMesh.text = "Time : " + GameTime + " s";
+
 		GameTime = 60;
+		TimeTextMesh.text = "Time : " + GameTime + " s";
 	}
 		
 	// Update is called once per frame
@@ -141,6 +142,8 @@ public class LaserGun : MonoBehaviour {
 					score += 1;
 					ScoreTextMesh.text = "Score: " + score;
 				}
+
+				/*
 				if (score == effect) { // 10점 단위 이펙트
 					Debug.Log("effect time");
 					GameObject part = Instantiate (particle_effect, hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
@@ -149,6 +152,7 @@ public class LaserGun : MonoBehaviour {
 						effect -= 1;
 					effect += 10;
 				}
+				*/
 			
 			}
 			Destroy (bul, 2.0f); // 총알 객체 파괴.

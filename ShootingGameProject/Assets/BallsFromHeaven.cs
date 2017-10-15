@@ -6,7 +6,7 @@ public class BallsFromHeaven : MonoBehaviour {
 	
 	public float startHeight = 10.0f;
 
-	private float IntervalTime = 2.0f;
+	private float IntervalTime = 1.8f;
 	private float DeltaTime = 0.0f;
 	private int iCntBall = 0;
 
@@ -16,6 +16,8 @@ public class BallsFromHeaven : MonoBehaviour {
 	private AudioSource thrower_sound;
 	public AudioClip thrower_clip;
 
+	private bool Once = true;
+	private GameObject[] SmallFire;
 	// Use this for initialization
 	void Start () {
 		thrower_sound = gameObject.AddComponent <AudioSource>() as AudioSource;
@@ -23,17 +25,27 @@ public class BallsFromHeaven : MonoBehaviour {
 		thrower_sound.clip = thrower_clip;
 		thrower_sound.loop = false;
 		thrower_sound.playOnAwake = false;
+
+		SmallFire = GameObject.FindGameObjectsWithTag ("SmallFire");
+		foreach (GameObject SmallFires in SmallFire) {
+			SmallFires.SetActive (false);
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (LaserGun.bGameStart) {
+			if (Once) {
+				GameObject.FindGameObjectWithTag ("Rig").SetActive (false);
+				Once = false;
+			}
 			DeltaTime += Time.deltaTime;
 			if (DeltaTime > IntervalTime)
 			{
 				thrower_sound.Play ();
 				//Debug.Log ("DeltaTime : " + DeltaTime + "Cnt : " + iCntBall);
-				Vector3 Position = new Vector3 (Random.Range (-4.0f, 4.0f), startHeight, Random.Range (-4.0f, 4.0f));
+				Vector3 Position = new Vector3 (Random.Range (-8.0f, 8.0f), startHeight, Random.Range (-8.0f, 8.0f));
 
 				GameObject Meteo = Instantiate (MeteoPrefab, Position, Quaternion.identity);
 				// 유성
@@ -54,6 +66,8 @@ public class BallsFromHeaven : MonoBehaviour {
 
 				DeltaTime = 0;
 				iCntBall++;
+				if(iCntBall < 17)
+					SmallFire [iCntBall / 2].SetActive (true);
 			}
 		}
 	}
