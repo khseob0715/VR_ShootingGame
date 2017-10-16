@@ -16,6 +16,7 @@ TagManager:
   - Box
   - SmallFire
   - Rig
+  - GameStartUI
   layers:
   - Default
   - TransparentFX

@@ -31,9 +31,9 @@ public class colliderSound : MonoBehaviour {
 			Debug.Log ("collider");
 			explo_sound.Play ();
 			turn = false;
-		}else if(col.collider.gameObject == GameObject.Find ("Plane") && !turn){
+		}/*else if(col.collider.gameObject == GameObject.Find ("Plane") && !turn){
 			turn = true;
-		}
+		}*/
 		Destroy (Explosion_ef, 2.0f);
 	}
 }

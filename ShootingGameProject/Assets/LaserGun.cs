@@ -113,8 +113,9 @@ public class LaserGun : MonoBehaviour {
 		if (Controller.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {  // 트리거를 눌렀을 때
 			GameObject bul = Instantiate (bullet, this.transform.position + new Vector3(0f,0.15f,0f), this.transform.rotation);
 			// 총알 오브젝트 생성
-		
+
 			Play(0); // 총알 효과음
+
 
 			if (Physics.Raycast (ray, out hit, 100) && hit.collider.gameObject != GameObject.Find("Plane")) 
 			{
@@ -143,16 +144,16 @@ public class LaserGun : MonoBehaviour {
 					ScoreTextMesh.text = "Score: " + score;
 				}
 
-				/*
-				if (score == effect) { // 10점 단위 이펙트
+
+				if (score == effect) { // 10점 단위 이펙트(삭제) 처음 시작시만!
 					Debug.Log("effect time");
 					GameObject part = Instantiate (particle_effect, hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
 					Destroy (part, 10.0f);
-					if (effect == 1)
-						effect -= 1;
-					effect += 10;
+					//if (effect == 1)
+					//	effect -= 1;
+					//effect += 10;
 				}
-				*/
+
 			
 			}
 			Destroy (bul, 2.0f); // 총알 객체 파괴.

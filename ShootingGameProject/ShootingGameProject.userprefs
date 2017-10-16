@@ -2,11 +2,17 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LaserGun.cs">
     <Files>
-      <File FileName="Assets\LaserGun.cs" Line="155" Column="7" />
-      <File FileName="Assets\BallsFromHeaven.cs" Line="48" Column="45" />
-      <File FileName="Assets\MeteoSwarm.cs" Line="19" Column="20" />
-      <File FileName="Assets\newS.cs" Line="14" Column="62" />
-      <File FileName="Assets\colliderSound.cs" Line="31" Column="1" />
+      <File FileName="Assets\LaserGun.cs" Line="116" Column="1" />
+      <File FileName="Assets\BallsFromHeaven.cs" Line="51" Column="28" />
+      <File FileName="Assets\MeteoSwarm.cs" Line="12" Column="3" />
+      <File FileName="Assets\newS.cs" Line="1" Column="1" />
+      <File FileName="Assets\colliderSound.cs" Line="36" Column="6" />
+      <File FileName="Assets\RestartGame.cs" Line="1" Column="1" />
+      <File FileName="Assets\BallDestroySound.cs" Line="1" Column="1" />
+      <File FileName="Assets\ExitApplication.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameEnd.cs" Line="1" Column="1" />
+      <File FileName="Assets\LaserPoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\MosterAttack.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

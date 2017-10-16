@@ -16,7 +16,7 @@ public class MeteoSwarm : MonoBehaviour {
 	void Update () {
 		if (LaserGun.GameTime == SwarmTime) {
 			GameObject temp = Instantiate (MeteoSwarmPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
-			SwarmTime -= 10;
+			SwarmTime -= 30;
 		}
 	}
 }
