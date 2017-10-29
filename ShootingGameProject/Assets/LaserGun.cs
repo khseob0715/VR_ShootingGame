@@ -15,9 +15,6 @@ public class LaserGun : MonoBehaviour {
 	private Ray ray;
 	private RaycastHit hit;	
 
-	//private GameObject ScoreText;
-	//private GameObject TimeText;
-
 	private TextMesh ScoreTextMesh;
 	private TextMesh TimeTextMesh;
 

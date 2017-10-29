@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Result_Score
-  - Menu
-  - CanvasScoreText
-  - CanvasTimeText
-  - Time_score
-  - Line
-  - GUN
-  - Fire
-  - Plane
-  - Box
-  - SmallFire
-  - Rig
-  - GameStartUI
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -26,28 +13,28 @@ TagManager:
   - UI
   - 
   - 
+  - Floor
+  - Shootable
+  - LightMask
+  - Invisible
   - 
   - 
   - 
   - 
   - 
-  - Mask
-  - Particles
-  - PlaneReflections
-  - Crowd
-  - AreaLights
-  - Crowd Object
-  - Crowd Ground
-  - Characters
-  - Interior
-  - Tunnel
-  - Exterior
-  - Terrain
-  - Dream
-  - SlateUI
-  - Sky
-  - ParticleForcesPuddleDetailTest
-  - ParticleForcesPuddle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   m_SortingLayers:
